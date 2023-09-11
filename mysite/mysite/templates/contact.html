@@ -5,5 +5,29 @@
 {% endblock title %}
 
 {% block body %}
-  This is body block of contact page
+  <div class="container-fluid my-4 px-0">
+    <img src="/static/contact.jpeg" class="d-block w-100" alt="..." style="max-height: 350px; width: 100%;">
+  </div>
+  <div class="container">
+    <h1 style="display:grid; text-align: center;">Contact Us</h1>
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" id="name" placeholder="name">
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="email" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+      <label for="phone" class="form-label">Phone Number</label>
+      <input type="number" class="form-control" id="phone" placeholder="">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Submit</button>
+  </div>
+  
 {% endblock body %}
